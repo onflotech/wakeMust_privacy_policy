@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WakeMust Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fa;
+      --text: #17202a;
+      --muted: #586474;
+      --panel: #ffffff;
+      --border: #d8dde6;
+      --accent: #2457c5;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101318;
+        --text: #eef2f7;
+        --muted: #aab3c0;
+        --panel: #171c24;
+        --border: #2b3340;
+        --accent: #8eb4ff;
+      }
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+
+    article {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 28px;
+    }
+
+    h1, h2 {
+      line-height: 1.25;
+      margin: 0 0 12px;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 30px;
+    }
+
+    p, ul {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .notice {
+      border-left: 4px solid var(--accent);
+      padding: 12px 14px;
+      background: color-mix(in srgb, var(--accent) 10%, transparent);
+      margin: 18px 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>WakeMust Privacy Policy</h1>
+      <p class="muted">Effective date: June 17, 2026</p>
+
+      <div class="notice">
+        <p><strong>Before publishing:</strong> replace the developer name, contact email, and hosted URL details in this file with the exact information used in the Google Play listing.</p>
+      </div>
+
+      <p>This Privacy Policy explains how WakeMust ("WakeMust", "the app", "we", "us", or "our") handles information when you use the WakeMust Android app.</p>
+
+      <h2>Developer and Contact</h2>
+      <p>Developer: <strong>[Replace with the legal developer name shown on Google Play]</strong></p>
+      <p>Privacy contact: <a href="mailto:[replace-with-support-email]">[replace-with-support-email]</a></p>
+
+      <h2>Summary</h2>
+      <p>WakeMust is an alarm app that stores your alarms, preferences, and wake history on your device. The app does not require an account and does not sell personal data.</p>
+      <p>Release builds use Firebase Crashlytics for crash diagnostics and Google Play Billing for optional subscription purchases. These services may process technical, diagnostic, and purchase-related information as described below.</p>
+
+      <h2>Information Stored on Your Device</h2>
+      <p>WakeMust stores app data locally using Android storage, Room database, and DataStore preferences. This may include:</p>
+      <ul>
+        <li>Alarm titles, times, repeat days, enabled status, challenge type, difficulty, snooze settings, vibration settings, and selected sound URI.</li>
+        <li>Wake history, including scheduled time, triggered time, completion time, time taken, challenge type, wrong attempts, emergency stop status, and wake score.</li>
+        <li>App settings such as theme, default sound, default vibration, default difficulty, max alarm duration, onboarding completion, and cached Pro entitlement status.</li>
+      </ul>
+      <p>This local alarm data is not sent to our servers. The app currently does not operate a WakeMust cloud account, login system, or cloud sync service.</p>
+
+      <h2>Information Sent to Service Providers</h2>
+      <p>WakeMust uses the following third-party services in release builds:</p>
+      <ul>
+        <li><strong>Firebase Crashlytics:</strong> used to diagnose crashes and app stability issues. Crash reports may include device model, operating system version, app version, crash logs, stack traces, installation identifiers, and other diagnostic data needed to understand and fix crashes.</li>
+        <li><strong>Google Play Billing:</strong> used to process optional WakeMust Pro subscription purchases, acknowledgements, restorations, and entitlement checks. Purchase handling is provided by Google Play and may involve purchase state, product identifiers, transaction status, and purchase tokens.</li>
+      </ul>
+      <p>WakeMust does not use third-party advertising SDKs and does not sell personal or sensitive user data.</p>
+
+      <h2>Permissions and Why They Are Used</h2>
+      <p>WakeMust requests Android permissions only for alarm functionality, reliability, notifications, vibration, and optional purchases. Depending on your Android version and settings, these may include:</p>
+      <ul>
+        <li><strong>Notifications:</strong> to show alarm and foreground-service notifications.</li>
+        <li><strong>Exact alarm access:</strong> to schedule alarms that fire at the selected time.</li>
+        <li><strong>Full-screen intent:</strong> to show the alarm screen when an alarm rings.</li>
+        <li><strong>Foreground service and wake lock:</strong> to keep the alarm active while ringing.</li>
+        <li><strong>Vibration:</strong> to vibrate during alarms when enabled.</li>
+        <li><strong>Boot completed:</strong> to reschedule enabled alarms after device restart or app update.</li>
+        <li><strong>Battery optimization exemption prompt:</strong> to help alarm reliability on devices that restrict background work.</li>
+        <li><strong>Internet and Google Play Billing:</strong> added by service SDKs for crash reporting and optional subscription purchase handling.</li>
+      </ul>
+      <p>WakeMust does not request camera, microphone, contacts, SMS, call log, or location permissions.</p>
+
+      <h2>How Information Is Used</h2>
+      <p>WakeMust uses information for these purposes:</p>
+      <ul>
+        <li>Creating, editing, scheduling, ringing, and dismissing alarms.</li>
+        <li>Saving app preferences and wake history on your device.</li>
+        <li>Calculating wake scores and showing statistics.</li>
+        <li>Providing optional Pro subscription features through Google Play Billing.</li>
+        <li>Detecting, diagnosing, and fixing crashes and reliability issues.</li>
+        <li>Complying with applicable legal, security, and platform requirements.</li>
+      </ul>
+
+      <h2>Sharing</h2>
+      <p>We do not sell personal data. We may share or allow processing of limited information with service providers that help operate the app, specifically Google services used for Firebase Crashlytics and Google Play Billing. We may also disclose information if required by law, legal process, or to protect rights, safety, and security.</p>
+
+      <h2>Retention and Deletion</h2>
+      <p>Local alarm data, settings, and wake history remain on your device until you delete alarms, clear app data, or uninstall WakeMust. WakeMust disables Android cloud backup and device-transfer backup for its local database, preferences, and files.</p>
+      <p>Crash diagnostics and purchase records handled by Google services are retained according to the applicable Google service policies and account settings.</p>
+      <p>WakeMust does not currently provide in-app account creation. If a future version adds accounts, this policy will be updated with account deletion instructions before that feature is released.</p>
+
+      <h2>Security</h2>
+      <p>WakeMust uses Android platform storage for local app data and limits access to data needed for alarm functionality. Data transmitted by Google service SDKs is handled through those services' secure transport and processing systems.</p>
+
+      <h2>Children</h2>
+      <p>WakeMust is not directed to children under 13. If you believe a child has provided personal information through the app, contact us so we can review and respond appropriately.</p>
+
+      <h2>International Users</h2>
+      <p>Your information may be processed in countries other than your own by Google service providers used by the app. Data protection laws may differ by jurisdiction.</p>
+
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy when WakeMust features, data handling, service providers, or legal requirements change. The effective date above will be updated when changes are made.</p>
+
+      <h2>Contact</h2>
+      <p>For privacy questions or deletion requests related to app data, contact: <a href="mailto:[contactus@onflotech.com]">contactus@onflotech.com</a>.</p>
+    </article>
+  </main>
+</body>
+</html>
